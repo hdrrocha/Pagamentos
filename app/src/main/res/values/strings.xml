@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Pagamentos</string>
+    <string name="money">Dinheiro</string>
+    <string name="credit">Crédito</string>
+    <string name="debit">Débito</string>
+    <string name="vr">V.R</string>
+    <string name="cupom">Cupom</string>
+    <string name="total_pagar">TOTAL A PAGAR</string>
+    <string name="masck">R$</string>
 </resources>

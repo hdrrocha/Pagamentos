@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_vr"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_vr"
+        app:layout_constraintEnd_toStartOf="@+id/img_cupom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_cupom"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/ic_cupom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_vr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/din_condensed_bold"
+        android:text="@string/vr"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="@+id/img_vr"
+        app:layout_constraintStart_toStartOf="@+id/img_vr"
+        app:layout_constraintTop_toBottomOf="@+id/img_vr" />
+    <TextView
+        android:id="@+id/tv_cupom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/din_condensed_bold"
+        android:text="@string/cupom"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="@+id/img_cupom"
+        app:layout_constraintStart_toStartOf="@+id/img_cupom"
+        app:layout_constraintTop_toBottomOf="@+id/img_cupom" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_money"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_money"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_debit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_debit"
+        app:layout_constraintEnd_toStartOf="@+id/img_credit"
+        app:layout_constraintStart_toEndOf="@+id/img_money"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_credit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/ic_credit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/din_condensed_bold"
+        android:text="@string/money"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="@+id/img_money"
+        app:layout_constraintStart_toStartOf="@+id/img_money"
+        app:layout_constraintTop_toBottomOf="@+id/img_money" />
+    <TextView
+        android:id="@+id/tv_debit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/din_condensed_bold"
+        android:text="@string/debit"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="@+id/img_debit"
+        app:layout_constraintStart_toStartOf="@+id/img_debit"
+        app:layout_constraintTop_toBottomOf="@+id/img_debit" />
+    <TextView
+        android:id="@+id/tv_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/din_condensed_bold"
+        android:text="@string/credit"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="@+id/img_credit"
+        app:layout_constraintStart_toStartOf="@+id/img_credit"
+        app:layout_constraintTop_toBottomOf="@+id/img_credit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
