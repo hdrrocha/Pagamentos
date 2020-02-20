@@ -16,4 +16,5 @@
     <color name="colorCyan">#739dc4</color>
     <color name="colorGreenOne">#18cfb0</color>
     <color name="colorPrimaryText">#9d9d9d</color>
+    <color name="colorSecundaryText">#7f7f7f</color>
 </resources>

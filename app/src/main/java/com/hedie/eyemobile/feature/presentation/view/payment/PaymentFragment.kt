@@ -85,10 +85,14 @@ class PaymentFragment : Fragment(){
     }
 
     fun showReceipt(receipt: String?) {
-        val intent = Intent(activity, ReceiptActivity::class.java)
-        intent.putExtra("receipt", amountLabel.text.toString())
-        intent.putExtra("money", receipt)
-        startActivity(intent)
+        var isNull = "0.00"
+        if(amountLabel.text.toString() !=  isNull) {
+            val intent = Intent(activity, ReceiptActivity::class.java)
+            intent.putExtra("receipt", receipt)
+            intent.putExtra("money", "R$" + amountLabel.text.toString())
+            startActivity(intent)
+        }
+
     }
 
 }
