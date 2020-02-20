@@ -8,4 +8,8 @@
     <string name="cupom">Cupom</string>
     <string name="total_pagar">TOTAL A PAGAR</string>
     <string name="masck">R$</string>
+    <string name="payment_success">PAGAMENTO REALIZADO COM SUCESSO</string>
+    <string name="eymobyle_name">Eymobile Tecnologia LDTDA.</string>
+    <string name="street">Rua Airton Ribeiro de Oliveira numero 64</string>
+    <string name="date_payment">05/10/2019 18:00:00</string>
 </resources>

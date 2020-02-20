@@ -1,4 +1,4 @@
-package com.hedie.eyemobile.feature.presentation.view
+package com.hedie.eyemobile.feature.presentation.view.Receipt
 
 import android.content.Context
 import android.os.Bundle
@@ -8,12 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.pagamentos.ViewPagerAdapter
+import com.hedie.com.hedie.eyemobile.feature.presentation.view.paymenteyemobile.feature.presentation.viewmodel.PaymentViewModel
 import com.hedie.eyemobile.R
 import com.hedie.eyemobile.feature.presentation.view.data.PaymentViewData
-import com.hedie.eyemobile.feature.presentation.viewmodel.PaymentViewModel
 import com.hedie.eyemobile.feature.presentation.viewmodel.PaymentViewModelFactory
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_payment.*
@@ -22,7 +21,7 @@ import kotlinx.android.synthetic.main.fragment_payment_buttons_section.*
 import javax.inject.Inject
 
 
-class PaymentFragment : Fragment(){
+class ReceipFragment : Fragment(){
 
     @Inject
     lateinit var factory: PaymentViewModelFactory
@@ -34,7 +33,7 @@ class PaymentFragment : Fragment(){
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_payment, container, false)
+    ): View? = inflater.inflate(R.layout.fragment_receipit, container, false)
 
     override fun onAttach(context: Context) {
         AndroidSupportInjection.inject(this)

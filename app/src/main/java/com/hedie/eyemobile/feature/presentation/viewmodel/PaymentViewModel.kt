@@ -1,4 +1,4 @@
-package com.hedie.eyemobile.feature.presentation.viewmodel
+package com.hedie.com.hedie.eyemobile.feature.presentation.view.paymenteyemobile.feature.presentation.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -42,8 +42,8 @@ class PaymentViewModel : ViewModel() {
 
     private fun PaymentViewData.post() = internalViewData.postValue(this)
 
-    fun mountNote(note: String) {
-        internalEventViewData.postValue(note)
+    fun mountReceipt(receipt: String) {
+        internalEventViewData.postValue(receipt)
     }
 
 }
