@@ -28,7 +28,7 @@ class PaymentFragment : Fragment() {
 
     private val viewModel: PaymentViewModel by viewModels { factory }
 
-    private val receiptObserver = Observer<String>(::showReceipt)
+//    private val receiptObserver = Observer<String>(::showReceipt)
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -47,7 +47,7 @@ class PaymentFragment : Fragment() {
         buttonBackspace.setOnClickListener { viewModel.onBackspaceClick() }
 
         viewModel.viewData.observe(viewLifecycleOwner, Observer(::onPaymentViewData))
-        viewModel.eventViewData.observe(this,receiptObserver)
+        viewModel.eventViewData.observe(viewLifecycleOwner,Observer(::showReceipt))
         viewModel.start()
 
     }
@@ -82,12 +82,12 @@ class PaymentFragment : Fragment() {
         }
 
     }
-//
-//    private fun showReceipt(viewData: String?) {
-//
-//      Log.i("Helder", viewData)
-//
-//    }
+
+    private fun showReceipt(viewData: String?) {
+
+      Log.i("Helder", viewData)
+
+    }
 
 
 

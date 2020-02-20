@@ -14,7 +14,8 @@ class PaymentViewModel : ViewModel() {
         get() = internalViewData
 
     private val internalEventViewData = MutableLiveData<String>()
-    val eventViewData: LiveData<String> = internalEventViewData
+    val eventViewData: LiveData<String>
+        get() = internalEventViewData
 
 
     private val currency = "R$"
