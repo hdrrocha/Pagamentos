@@ -1,6 +1,7 @@
 package com.hedie.eyemobile.feature.presentation.view.payment
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import androidx.lifecycle.Observer
 import com.example.pagamentos.ViewPagerAdapter
 import com.hedie.com.hedie.eyemobile.feature.presentation.view.paymenteyemobile.feature.presentation.viewmodel.PaymentViewModel
 import com.hedie.eyemobile.R
+import com.hedie.eyemobile.feature.presentation.view.Receipt.ReceiptActivity
 import com.hedie.eyemobile.feature.presentation.view.data.PaymentViewData
 import com.hedie.eyemobile.feature.presentation.viewmodel.PaymentViewModelFactory
 import dagger.android.support.AndroidSupportInjection
@@ -84,15 +86,10 @@ class PaymentFragment : Fragment(){
     }
 
     fun showReceipt(receipt: String?) {
-        Log.i("Helder", receipt)
+        val intent = Intent(activity, ReceiptActivity::class.java)
+        intent.putExtra("receipt", amountLabel.text.toString())
+        intent.putExtra("money", receipt)
+        startActivity(intent)
     }
-
-//    private fun showReceipt(viewData: String?) {
-//
-//      Log.i("Helder", viewData)
-//
-//    }
-
-
 
 }
