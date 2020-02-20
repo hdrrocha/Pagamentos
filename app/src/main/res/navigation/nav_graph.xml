@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/navigation_payment_fragment">
+
+    <fragment
+        android:id="@+id/navigation_payment_fragment"
+        android:name="com.hedie.eyemobile.feature.presentation.view.PaymentFragment"
+        android:label="PaymentFragment"
+        tools:layout="@layout/fragment_payment" />
+
+</navigation>

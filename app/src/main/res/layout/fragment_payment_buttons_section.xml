@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="3">
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/PaymentButton"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/PaymentButton"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/PaymentButton"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/PaymentButton"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/PaymentButton"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/PaymentButton"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/PaymentButton"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/PaymentButton"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/PaymentButton"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/PaymentButton"
+        android:layout_columnSpan="2"
+        android:layout_gravity="end"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/buttonBackspace"
+        style="@style/PaymentButton"
+        android:text="\u232b" />
+
+</GridLayout>

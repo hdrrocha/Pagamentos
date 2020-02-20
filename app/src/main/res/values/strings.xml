@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Pagamentos</string>
+    <string name="app_name">EyeMobile</string>
+    <string name="payment_description">TOTAL A PAGAR</string>
     <string name="money">Dinheiro</string>
     <string name="credit">Crédito</string>
     <string name="debit">Débito</string>

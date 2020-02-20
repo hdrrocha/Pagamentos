@@ -1,4 +1,4 @@
-package com.example.pagamentos
+package com.hedie.eyemobile
 
 import org.junit.Test
 
