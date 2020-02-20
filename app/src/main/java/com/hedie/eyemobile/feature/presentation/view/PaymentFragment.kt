@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.pagamentos.ViewPagerAdapter
@@ -21,12 +22,12 @@ import kotlinx.android.synthetic.main.fragment_payment_buttons_section.*
 import javax.inject.Inject
 
 
-class PaymentFragment : Fragment() {
+class PaymentFragment : Fragment(){
 
     @Inject
     lateinit var factory: PaymentViewModelFactory
 
-    private val viewModel: PaymentViewModel by viewModels { factory }
+    private val viewModel: PaymentViewModel by activityViewModels { factory }
 
 //    private val receiptObserver = Observer<String>(::showReceipt)
     override fun onCreateView(
@@ -83,11 +84,15 @@ class PaymentFragment : Fragment() {
 
     }
 
-    private fun showReceipt(viewData: String?) {
-
-      Log.i("Helder", viewData)
-
+    fun showReceipt(receipt: String?) {
+        Log.i("Helder", receipt)
     }
+
+//    private fun showReceipt(viewData: String?) {
+//
+//      Log.i("Helder", viewData)
+//
+//    }
 
 
 

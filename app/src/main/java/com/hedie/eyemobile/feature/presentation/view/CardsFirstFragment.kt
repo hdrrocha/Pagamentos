@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.hedie.eyemobile.R
 import com.hedie.eyemobile.feature.presentation.viewmodel.PaymentEventsViewModel
@@ -26,7 +27,7 @@ class CardsFirstFragment : Fragment() {
     @Inject
     lateinit var factory: PaymentViewModelFactory
 
-    private val viewModel: PaymentViewModel by viewModels { factory }
+    private val viewModel: PaymentViewModel by activityViewModels { factory }
 
     override fun onAttach(context: Context) {
         AndroidSupportInjection.inject(this)
