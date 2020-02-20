@@ -7,7 +7,6 @@
     android:background="@drawable/bkg_comprovante"
     android:paddingTop="32dp">
 
-
     <ImageView
         android:id="@+id/img_bkg"
         android:layout_width="0dp"

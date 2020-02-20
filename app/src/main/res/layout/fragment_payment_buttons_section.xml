@@ -8,46 +8,55 @@
     <Button
         android:id="@+id/button1"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="1" />
 
     <Button
         android:id="@+id/button2"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="2" />
 
     <Button
         android:id="@+id/button3"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="3" />
 
     <Button
         android:id="@+id/button4"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="4" />
 
     <Button
         android:id="@+id/button5"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="5" />
 
     <Button
         android:id="@+id/button6"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="6" />
 
     <Button
         android:id="@+id/button7"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="7" />
 
     <Button
         android:id="@+id/button8"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="8" />
 
     <Button
         android:id="@+id/button9"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="9" />
 
     <Button
@@ -55,11 +64,13 @@
         style="@style/PaymentButton"
         android:layout_columnSpan="2"
         android:layout_gravity="end"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="0" />
 
     <Button
         android:id="@+id/buttonBackspace"
         style="@style/PaymentButton"
+        android:fontFamily="@font/din_condensed_bold"
         android:text="\u232b" />
 
 </GridLayout>

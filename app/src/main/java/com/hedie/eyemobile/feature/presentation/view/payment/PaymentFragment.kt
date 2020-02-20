@@ -82,7 +82,6 @@ class PaymentFragment : Fragment(){
             amountLabel.text = viewData.amount
 
         }
-
     }
 
     fun showReceipt(receipt: String?) {
